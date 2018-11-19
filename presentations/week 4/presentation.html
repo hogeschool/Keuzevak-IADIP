@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hogeschool Rotterdam - Introduction to application development - Week 4</title>
+    <meta charset="utf-8">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body {
+            font-family: 'Droid Serif';
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .remark-slide-content h1 {
+            font-size: 3em;
+        }
+
+        .remark-slide-content h2 {
+            font-size: 2em;
+        }
+
+        .remark-slide-content h3 {
+            font-size: 1.6em;
+        }
+
+        .footnote {
+            position: absolute;
+            bottom: 3em;
+        }
+
+        li p {
+            line-height: 1.25em;
+        }
+
+        .red {
+            color: #fa0000;
+        }
+
+        .large {
+            font-size: 2em;
+        }
+
+        a,
+        a>code {
+            color: rgb(249, 38, 114);
+            text-decoration: none;
+        }
+
+        code {
+            background: #e7e8e2;
+            border-radius: 5px;
+        }
+
+        .remark-code,
+        .remark-inline-code {
+            font-family: 'Ubuntu Mono';
+        }
+
+        .remark-code-line-highlighted {
+            background-color: #373832;
+        }
+
+        .pull-left {
+            float: left;
+            width: 47%;
+        }
+
+        .pull-right {
+            float: right;
+            width: 47%;
+        }
+
+        .pull-right~p {
+            clear: both;
+        }
+
+        #slideshow .slide .content code {
+            font-size: 0.8em;
+        }
+
+        #slideshow .slide .content pre code {
+            font-size: 0.9em;
+            padding: 15px;
+        }
+
+        .inverse {
+            background: #272822;
+            color: #777872;
+            text-shadow: 0 0 20px #333;
+        }
+
+        .inverse h1,
+        .inverse h2 {
+            color: #f3f3f3;
+            line-height: 0.8em;
+        }
+
+        /* Slide-specific styling */
+        #slide-inverse .footnote {
+            bottom: 12px;
+            left: 20px;
+        }
+
+        #slide-how .slides {
+            font-size: 0.9em;
+            position: absolute;
+            top: 151px;
+            right: 140px;
+        }
+
+        #slide-how .slides h3 {
+            margin-top: 0.2em;
+        }
+
+        #slide-how .slides .first,
+        #slide-how .slides .second {
+            padding: 1px 20px;
+            height: 90px;
+            width: 120px;
+            -moz-box-shadow: 0 0 10px #777;
+            -webkit-box-shadow: 0 0 10px #777;
+            box-shadow: 0 0 10px #777;
+        }
+
+        #slide-how .slides .first {
+            background: #fff;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            z-index: 1;
+        }
+
+        #slide-how .slides .second {
+            position: relative;
+            background: #fff;
+            z-index: 0;
+        }
+
+        /* Two-column layout */
+        .left-column {
+            color: #777;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+
+        .left-column h2:last-of-type,
+        .left-column h3:last-child {
+            color: #000;
+        }
+
+        .right-column {
+            width: 75%;
+            float: right;
+            padding-top: 1em;
+        }
+
+        .right-column img {
+            max-width: 100%;
+        }
+
+        .fifty-percent img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 50%;
+        }
+
+        .huge {
+            font-size: 200%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+#Introduction to application development
+Week 4
+.footnote[Visit the [course website](https://github.com/hogeschool/Keuzevak-IADIP)]
+---
+layout: false
+.left-column[
+## Last week
+]
+.right-column[
+Last week we discussed and used the following topics:
+
+- String operations
+- List operations
+- Loops
+- Typecasting
+
+Any questions?
+]
+---
+layout: false
+.left-column[
+## This week
+]
+.right-column[
+This week we will discuss and use the following topics:
+
+- Arithmetic
+- Functions
+- Conditions
+]
+---
+template: inverse
+
+## How to add two integers?
+---
+layout: false
+.left-column[
+## Arithmetic
+### - Outline
+]
+.right-column[
+Your calculator will implement the __addition__ (+) function (among other functions) for positive integers.
+
+But how do we actually calculate such a calculation (without applying the in-built __+__ operator on the integers):
+
+```
+57854 + 89765
+```
+]
+---
+layout: false
+.left-column[
+## Arithmetic
+### - Outline
+### - Digits and carrying
+]
+.right-column[
+![Digits](digits.png)
+
+- Numbers (including integers) consists of __digits__
+- For instance, the number 57854 consists of __5__ digits
+
+We limit ourselves to __decimal__ numbers. Decimal numbers can have digits that take values in the range:
+
+- 0-9 (10 values, __deca__ means 10)
+
+So, if we add two digits and the result is __greater than__ 9, we need to add __1__ to the digit to the left!
+]
+---
+layout: false
+.left-column[
+## Arithmetic
+### - Outline
+### - Digits and carrying
+### - Process
+]
+.right-column[
+![Addition](addition.gif)
+
+- Right-to-left
+- Sum two digits and __carry__
+- Result is more than 9 🠒 __carry__
+
+Yes, we use the __+__ operator to sum digits.
+]
+---
+layout: false
+.left-column[
+## Arithmetic
+### - Outline
+### - Digits and carrying
+### - Process
+]
+.right-column[
+![Addition](addition2.gif)
+
+Calculating:
+
+```
+89765 + 7854
+```
+]
+---
+template: inverse
+
+## How to subtract one integer from another?
+---
+layout: false
+.left-column[
+## Subtraction
+]
+.right-column[
+.huge[89765 - 7854 = 81911]
+
+- For subtraction, we apply a similar scheme, however
+    - Instead of a __carry__ we will now calculate a __borrow__
+    - Borrowing from the digit to the left
+]
+---
+template: inverse
+
+## What about multiplication and division?
+---
+layout: false
+.left-column[
+## Remarks
+]
+.right-column[
+Please remember that your calculator will need to process the following commands:
+
+```
+sum x y
+sub x y
+multiply x y
+divide x y
+```
+
+The expression are thus entered in __prefix__ notation!
+]
+---
+.left-column[
+## Assignments week 4
+]
+.right-column[
+- Visit the course website and look up the assignments of week 4
+
+Week 4 assignments are:
+- Implementation of addition
+- Implementation of subtraction
+- Implementation of multiplication
+- Implementation of division
+
+Make sure to submit your solution through AutoGradr!
+]
+---
+template: inverse
+
+## Start practicum
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+        var slideshow = remark.create();
+    </script>
+</body>
+
+</html>

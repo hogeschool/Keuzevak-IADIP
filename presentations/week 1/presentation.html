@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hogeschool Rotterdam - Introduction to application development - Week 1</title>
+    <meta charset="utf-8">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body {
+            font-family: 'Droid Serif';
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .remark-slide-content h1 {
+            font-size: 3em;
+        }
+
+        .remark-slide-content h2 {
+            font-size: 2em;
+        }
+
+        .remark-slide-content h3 {
+            font-size: 1.6em;
+        }
+
+        .footnote {
+            position: absolute;
+            bottom: 3em;
+        }
+
+        li p {
+            line-height: 1.25em;
+        }
+
+        .red {
+            color: #fa0000;
+        }
+
+        .large {
+            font-size: 2em;
+        }
+
+        a,
+        a>code {
+            color: rgb(249, 38, 114);
+            text-decoration: none;
+        }
+
+        code {
+            background: #e7e8e2;
+            border-radius: 5px;
+        }
+
+        .remark-code,
+        .remark-inline-code {
+            font-family: 'Ubuntu Mono';
+        }
+
+        .remark-code-line-highlighted {
+            background-color: #373832;
+        }
+
+        .pull-left {
+            float: left;
+            width: 47%;
+        }
+
+        .pull-right {
+            float: right;
+            width: 47%;
+        }
+
+        .pull-right~p {
+            clear: both;
+        }
+
+        #slideshow .slide .content code {
+            font-size: 0.8em;
+        }
+
+        #slideshow .slide .content pre code {
+            font-size: 0.9em;
+            padding: 15px;
+        }
+
+        .inverse {
+            background: #272822;
+            color: #777872;
+            text-shadow: 0 0 20px #333;
+        }
+
+        .inverse h1,
+        .inverse h2 {
+            color: #f3f3f3;
+            line-height: 0.8em;
+        }
+
+        /* Slide-specific styling */
+        #slide-inverse .footnote {
+            bottom: 12px;
+            left: 20px;
+        }
+
+        #slide-how .slides {
+            font-size: 0.9em;
+            position: absolute;
+            top: 151px;
+            right: 140px;
+        }
+
+        #slide-how .slides h3 {
+            margin-top: 0.2em;
+        }
+
+        #slide-how .slides .first,
+        #slide-how .slides .second {
+            padding: 1px 20px;
+            height: 90px;
+            width: 120px;
+            -moz-box-shadow: 0 0 10px #777;
+            -webkit-box-shadow: 0 0 10px #777;
+            box-shadow: 0 0 10px #777;
+        }
+
+        #slide-how .slides .first {
+            background: #fff;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            z-index: 1;
+        }
+
+        #slide-how .slides .second {
+            position: relative;
+            background: #fff;
+            z-index: 0;
+        }
+
+        /* Two-column layout */
+        .left-column {
+            color: #777;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+
+        .left-column h2:last-of-type,
+        .left-column h3:last-child {
+            color: #000;
+        }
+
+        .right-column {
+            width: 75%;
+            float: right;
+            padding-top: 1em;
+        }
+
+        .right-column img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+#Introduction to application development
+Week 1
+.footnote[Visit the [course website](https://github.com/hogeschool/Keuzevak-IADIP)]
+---
+layout: false
+.left-column[
+## What should you do?
+]
+.right-column[
+Developing an application from begin to end.
+
+- Programming
+- Using acquired knowledge to solve problems
+- Developing an application
+- Using available tools to help with the above
+    - Integrated development environment (IDE)
+    - Debugger
+]
+---
+.left-column[
+## What should you use?
+]
+.right-column[
+- Python 3
+- Visual Studio Code + Python extension
+
+![Logos](visualstudiocodepluspython.png)
+]
+---
+.left-column[
+## How to pass?
+]
+.right-column[
+Your grade consists of:
+
+Weekly progress (assignments checked by your teacher __30%__) and the final assignment (__70%__)
+
+- Attend each week
+- Submit working solutions to weekly assignment following lecture latest (assignment of week 1 should be checked by your teacher in week 2 latest, week 2 in week 3 latest, etcetera)
+- Implement all requirements
+- Make sure to pass all test cases
+- Submit your final assignment (consisting of all implemented requirements) by the end of the course
+
+Correctly implementing at least all requirements from the weekly assignments results in a sufficient grade.
+
+Bonus: Implement additional features for a better grade!
+]
+---
+.left-column[
+## What application will you develop?
+]
+.right-column[
+Throughout this course we will develop a command-line calculator in Python with the following functionality:
+
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Power
+- Square root
+- Greatest common divisor
+- Least common multiple
+- Modulo
+- Bonus functionality
+
+Review the __final assignment description__ for the requirements!
+]
+---
+.left-column[
+## Structure
+]
+.right-column[
+Structure of the lessons is as follows:
+
+- First part: __Presentation about topics related to practicum__
+- Second part: __Practicum__
+    - You will work on the weekly assignments during the practicum
+    - In case you don't finish within the practicum, finish the weekly assignment at home and have your solution checked by next lesson latest
+- Course consists of __2 ects__
+- Course will last for __5 weeks__, weeks 6 and 7 are planned for refinement of your application
+- All required information can be found at the course website: https://hogeschool.github.io/Keuzevak-IADIP/
+]
+---
+.left-column[
+## How to submit your solution?
+]
+.right-column[
+![AutoGradr](autogradr.png)
+
+We will make use of [AutoGradr](http://www.autogradr.com)
+]
+---
+layout: false
+.left-column[
+## This week
+]
+.right-column[
+This week we will discuss and use the following topics:
+
+- IDE
+- The Python environment
+- Debugger
+- Modules
+]
+---
+.left-column[
+ ## First things first
+]
+.right-column[
+![XKCD](wisdom_of_the_ancients.png)
+
+What to expect when learning to program?
+
+Be **patient**, learning a language takes **time**. Wrapping your head around solving problems by programming them also takes time.
+
+It's normal to be frustrated. That's the moment when you should be patient and ask questions.
+]
+---
+template: inverse
+
+## What is an integrated development environment (IDE)?
+---
+.left-column[
+ ## Tools
+### - IDE
+]
+.right-column[
+Software application that:
+
+- Combines multiple tools typically used by computer programmers:
+    - Debugger
+    - Linter
+    - Source code editor
+    - Compiler / interpreter
+    - Version control
+    - etc.
+- Well-known IDEs:
+    - Microsoft Visual Studio
+    - Qt Creator
+    - Xcode
+    - Visual Studio Code
+    - Eclipse
+    - NetBeans
+]
+---
+.left-column[
+ ## Tools
+### - IDE
+### - Source code editor
+]
+.right-column[
+![Source Editor Demo](sourceeditor.gif)
+
+We would like our source editor (the window where we type code into) to:
+
+- __Auto-complete__ names of functions and variables already known
+- Show a __hint__ in case we made an error (called __linting__)
+- __Color__ keywords, such that we easily see the difference between various keyworks that we will use while programming
+- And more visual aids
+]
+---
+.left-column[
+ ## Tools
+### - IDE
+### - Source code editor
+### - Debugger
+]
+.right-column[
+![Debugger Demo](debugdemo.gif)
+
+Using a debugger we can:
+
+- __Step__ through code
+- Set __breakpoints__ (points where the debugger should pause)
+- Peek in __memory__ (see variables and their states)
+- Watch the order of functions called (the __call stack__)
+- __Debug__ software
+]
+---
+.left-column[
+ ## Tools
+### - IDE
+### - Source code editor
+### - Debugger
+]
+.right-column[
+![Debugger](debugging.png)
+
+Controlling the debugger:
+
+- __Start:__ Start debugging the application (run your code)
+- __Step over:__ Move to the next line of code
+- __Step in/out:__ Step into the function at the current line or step out of the current function (will be of use later on)
+- __Restart:__ Restart debugging the application (will re-run your code)
+- __Stop:__ Stop debugging the application (will stop your code)
+]
+---
+.left-column[
+ ## Tools
+### - IDE
+### - Source code editor
+### - Debugger
+### - Compiler / interpreter
+]
+.right-column[
+![Installing](installing.gif)
+
+- You will rely on a compiler or interpreter to make your code executable or execute your code
+- For Python, we use the Python interpreter
+- Visual Studio Code can make use of the Python interpreter to run your code
+- You will require the Python extension for MSVSC
+]
+---
+.left-column[
+ ## Tools
+### - IDE
+### - Source code editor
+### - Debugger
+### - Compiler / interpreter
+### - Version control
+]
+.right-column[
+![Version Control](vc-xkcd.jpg)
+
+- We strongly suggest you use __version control__ for your code
+- Version control keeps track of the changes to your code and thus acts as a backup for versions of your codebase
+- A well-known version control system is __Git__
+
+Learn more: https://guides.github.com/introduction/git-handbook/
+]
+---
+.left-column[
+ ## Modules
+]
+.right-column[
+![Math Mod](mathmod.png)
+
+In Python we can import functionality from a __module__ and create modules, e.g. __testmodule.py__:
+
+```python
+def test_function():
+    print('test')
+```
+
+And use our created module or a pre-existing module __math__:
+
+```python
+import testmodule
+import math
+
+testmodule.test_function()
+print(math.sqrt(25))
+```
+]
+---
+layout: false
+.left-column[
+## Modules
+### - Example
+]
+.right-column[
+![Modules](modules.gif)
+
+Remember to place the module name in front of the function.
+]
+---
+.left-column[
+ ## Project structure
+]
+.right-column[
+In the __code/__ directory, you can find a starting point for the implementation of your calculator.
+
+In week 2 we will start using this code.
+
+The code is divided into multiple modules:
+
+- __arith_tools__
+- __arith__
+- __functions__
+- __main__
+
+__debugging_exercises.py__ is a separate program that will only be used in week 1.
+]
+---
+.left-column[
+## Assignments week 1
+]
+.right-column[
+- Visit the course website and look up the assignments of week 1
+
+Week 1 assignments are:
+- Installation of Python .red[*]
+- Installation of Visual Studio Code
+- Testing the debugger
+- Setting up the project structure of your final application
+
+Make sure to submit your solution to (4) through AutoGradr!
+
+.footnote[.red[*] Make sure that the __python__ executable is available in your path!]
+]
+---
+template: inverse
+
+## Start practicum
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+        var slideshow = remark.create();
+    </script>
+</body>
+
+</html>

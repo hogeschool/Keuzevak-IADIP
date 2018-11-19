@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hogeschool Rotterdam - Introduction to application development - Week 2</title>
+    <meta charset="utf-8">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+        @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+        body {
+            font-family: 'Droid Serif';
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .remark-slide-content h1 {
+            font-size: 3em;
+        }
+
+        .remark-slide-content h2 {
+            font-size: 2em;
+        }
+
+        .remark-slide-content h3 {
+            font-size: 1.6em;
+        }
+
+        .footnote {
+            position: absolute;
+            bottom: 3em;
+        }
+
+        li p {
+            line-height: 1.25em;
+        }
+
+        .red {
+            color: #fa0000;
+        }
+
+        .large {
+            font-size: 2em;
+        }
+
+        a,
+        a>code {
+            color: rgb(249, 38, 114);
+            text-decoration: none;
+        }
+
+        code {
+            background: #e7e8e2;
+            border-radius: 5px;
+        }
+
+        .remark-code,
+        .remark-inline-code {
+            font-family: 'Ubuntu Mono';
+        }
+
+        .remark-code-line-highlighted {
+            background-color: #373832;
+        }
+
+        .pull-left {
+            float: left;
+            width: 47%;
+        }
+
+        .pull-right {
+            float: right;
+            width: 47%;
+        }
+
+        .pull-right~p {
+            clear: both;
+        }
+
+        #slideshow .slide .content code {
+            font-size: 0.8em;
+        }
+
+        #slideshow .slide .content pre code {
+            font-size: 0.9em;
+            padding: 15px;
+        }
+
+        .inverse {
+            background: #272822;
+            color: #777872;
+            text-shadow: 0 0 20px #333;
+        }
+
+        .inverse h1,
+        .inverse h2 {
+            color: #f3f3f3;
+            line-height: 0.8em;
+        }
+
+        /* Slide-specific styling */
+        #slide-inverse .footnote {
+            bottom: 12px;
+            left: 20px;
+        }
+
+        #slide-how .slides {
+            font-size: 0.9em;
+            position: absolute;
+            top: 151px;
+            right: 140px;
+        }
+
+        #slide-how .slides h3 {
+            margin-top: 0.2em;
+        }
+
+        #slide-how .slides .first,
+        #slide-how .slides .second {
+            padding: 1px 20px;
+            height: 90px;
+            width: 120px;
+            -moz-box-shadow: 0 0 10px #777;
+            -webkit-box-shadow: 0 0 10px #777;
+            box-shadow: 0 0 10px #777;
+        }
+
+        #slide-how .slides .first {
+            background: #fff;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            z-index: 1;
+        }
+
+        #slide-how .slides .second {
+            position: relative;
+            background: #fff;
+            z-index: 0;
+        }
+
+        /* Two-column layout */
+        .left-column {
+            color: #777;
+            width: 20%;
+            height: 92%;
+            float: left;
+        }
+
+        .left-column h2:last-of-type,
+        .left-column h3:last-child {
+            color: #000;
+        }
+
+        .right-column {
+            width: 75%;
+            float: right;
+            padding-top: 1em;
+        }
+
+        .left-inner-column {
+            width: 49.5%;
+            float: left;
+        }
+        .right-inner-column {
+            width: 49.5%;
+            float: right;
+        }
+
+        .right-column img {
+            max-width: 100%;
+        }
+
+        .fifty-percent img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+#Introduction to application development
+Week 2
+.footnote[Visit the [course website](https://github.com/hogeschool/Keuzevak-IADIP)]
+---
+layout: false
+.left-column[
+## Last week
+]
+.right-column[
+- We installed the Python environment
+- We installed Visual Studio Code
+- We started using the debugger
+- We got familiar with the structure of the final assignment
+
+Are there any questions?
+]
+---
+layout: false
+.left-column[
+## This week
+]
+.right-column[
+This week we will discuss and use the following topics:
+
+- Functions
+- Main loop
+- Conditions
+- Output
+- Input
+]
+---
+template: inverse
+
+## Why do we need functions?
+---
+layout: false
+.left-column[
+## Functions
+### - Why?
+]
+.right-column[
+Let's suppose for a second that we would not have functions and we want to calculate the area of three circles:
+
+```python
+radius_one = 5
+radius_two = 11
+radius_three = 14
+
+circle_one_area = radius_one * radius_one * 3.14
+circle_two_area = radius_two * radius_two * 3.14
+circle_three_area = radius_three * radius_three * 3.14
+```
+
+Although this works, we might want to create a __function__ that calculates the area of a circle instead.
+
+```python
+def area_circle(radius):
+    return radius * radius * 3.14
+
+circle_one_area = area_circle(5)
+circle_two_area = area_circle(11)
+circle_three_area = area_circle(14)
+```
+]
+---
+layout: false
+.left-column[
+## Functions
+### - Why?
+### - Using functions
+]
+.right-column[
+Thus:
+
+- Functions are units that perform a specific __task__
+- Functions can be used in your program wherever such a task should be performed
+- Functions __group__ instructions such that the instructions combined perform a task
+- Executing a function is typically called a function __call__
+- The instructions that make up the function are typically refer to as the __body__ of a function
+- A function can have multiple __parameters__ (comma-separated)
+- A function can __return__ values
+
+![Function](function.png)
+]
+---
+layout: false
+.left-column[
+## Functions
+### - Why?
+### - Using functions
+### - Calling functions
+]
+.right-column[
+Assume that we have created the function __area_circle__:
+
+```python
+area = area_circle(5)
+```
+
+__Passing__ the integer __5__ to the function __area_circle__ and assigning the return value to __area__.
+
+A function with multiple parameters:
+
+```python
+def area_square(width, height):
+    return width * height
+
+area = area_square(5, 10)
+```
+
+__Passing__ the integers __5__ and __10__ to the function __area_square__ and assigning the return value to __area__.
+]
+---
+template: inverse
+
+## How to keep our application running?
+---
+layout: false
+.left-column[
+## Main loop
+]
+.right-column[
+![Main loop](mainloop.png)
+
+.left-inner-column[
+**left.py**
+```python
+do_something()
+do_something_else()
+do_something()
+do_something_else()
+```
+]
+.right-inner-column[
+**right.py**
+```python
+exit = False
+while (not exit):
+    do_something()
+    do_something_else()
+    do_something()
+    do_something_else()
+    exit = should_exit()
+```
+]
+
+The __left__ example simply performs some tasks, while the __right__ example runs until it should stop (denoted by the __exit__ variable).
+
+Think of a videogame that keeps on running until you click the quit button.
+]
+---
+layout: false
+.left-column[
+## Conditions
+]
+.right-column[
+Conditional branching allows us to execute different instructions (lines of code) depending on whether or not the __boolean__ value of an expression is __True__.
+
+![If statement](ifstatement.png)
+
+```python
+a = 15
+b = 14
+
+def fizzbuzz(number):
+    if (number % 5 == 0 and number % 3 == 0):
+        return 'fizzbuzz'
+    elif (number % 5 == 0):
+        return 'fizz'
+    elif (number % 3 == 0):
+        return 'buzz'
+    else:
+        return str(number)
+
+c = fizzbuzz(a)
+d = fizzbuzz(b)
+```
+
+What are the values of __c__ and __d__?
+]
+---
+layout: false
+.left-column[
+## Output
+### - Outline
+]
+.right-column[
+Python provides a way to write text to the __standard output__ stream.
+
+![Stdout](stdout.gif)
+
+- Throughout this course we will develop a __command-line__ application
+    - Command-line applications make use of __text-based__ in- and output
+    - Under Windows, we will run our application in __command-prompt__
+    - Under Linux and OSX, we will use a terminal (e.g. __bash__)
+
+To write to the standard output stream in Python, we make use of the __print__ function.
+]
+---
+layout: false
+.left-column[
+## Intermezzo
+]
+.right-column[
+.fifty-percent[![Manual](rtfm.png)]
+
+Instead of Stackoverflow, there is an actual manual for the Python programming language: https://docs.python.org/
+
+Use it, it __is__ correct.
+]
+---
+layout: false
+.left-column[
+## Output
+### - Outline
+### - Print function
+]
+.right-column[
+![Print](print.png)
+From: https://docs.python.org/3/library/functions.html#print
+
+Documentation tells us that __print__:
+- Takes 5 parameters, for now, we will only use the first one
+- Notice that argument __file__ is set to __sys.stdout__ (the standard output stream!)
+- Prints __objects__ to the standard output stream
+]
+---
+layout: false
+.left-column[
+## Output
+### - Outline
+### - Print function
+### - Using the print function
+]
+.right-column[
+We can print __objects__, for instance, __one string__ object:
+```python
+print('foo')
+```
+__two string__ objects:
+```python
+print('foo', 'bar')
+```
+__two string__ objects:
+```python
+print('foo' + '1', 'bar')
+```
+
+The outputs that we can expect in our console are respectively:
+
+```
+foo
+foo bar
+foo1 bar
+```
+]
+---
+layout: false
+.left-column[
+## Input
+### - Outline
+]
+.right-column[
+Python provides a way to read text from the __standard input__ stream.
+
+![Stdin](stdin.gif)
+
+- When can instruct our application to __read__ text input from the console
+- Upon instructing our application to read text input, the application will halt until text followed by a __new line__ is entered
+- The user can input text by writing and hitting the __enter__ key
+
+To read from the standard input stream in Python, we make use of the __input__ function.
+]
+---
+layout: false
+.left-column[
+## Input
+### - Outline
+### - Input function
+]
+.right-column[
+![Print](input.png)
+From: https://docs.python.org/3/library/functions.html#input
+
+Documentation tells us that __input__:
+- Takes an optional argument __prompt__ that prints the message __prompt__ to the standard output
+- Returns the text input entered into the console
+]
+---
+layout: false
+.left-column[
+## Input
+### - Outline
+### - Input function
+### - Using the input function
+]
+.right-column[
+We can read text input:
+```python
+age = input('your age is? ')
+print('your age is: ', age)
+```
+
+The outputs that we can expect in our console is:
+
+```
+your age is? 42
+42
+```
+]
+---
+layout: false
+.left-column[
+## String formatting
+### - Outline
+]
+.right-column[
+A useful feature is the ability to format strings. For instance, in the last example we used the following line:
+
+```python
+print('your age is: ', age)
+```
+
+Here, __age__ is supplied as a second __object__ to the __print__ function. We can also use __string formatting__ to format our string in a way to include the __age__ variable.
+
+![Manual](format.png)
+
+The output that we can expect when printing __s__ is:
+
+```
+age is 10 and is man is True
+```
+
+The __string format__ specifies the type of the variables that should be formatted. In this example, we see two such variables refered to be __%i__ (integer) and __%b__ (boolean).
+]
+---
+layout: false
+.left-column[
+## String formatting
+### - Outline
+### - % operator (for strings)
+]
+.right-column[
+![Formatting](formatting.png)
+
+Documentation: https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting
+]
+---
+.left-column[
+## Assignments week 2
+]
+.right-column[
+- Visit the course website and look up the assignments of week 2
+
+Week 2 assignments are:
+- Implementation of the __main__ loop
+- Implementation of the __quit__ command
+- Implementation of the __help__ command
+- Implementation of the __version__ command
+
+Make sure to submit your solution through AutoGradr!
+]
+---
+template: inverse
+
+## Start practicum
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+        var slideshow = remark.create();
+    </script>
+</body>
+
+</html>
