@@ -87,15 +87,15 @@ Slides
 Please find the slides below.
 
 - [Week
-    1](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week 1/presentation.html)
+    1](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%201/presentation.html)
 - [Week
-    2](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week 2/presentation.html)
+    2](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%202/presentation.html)
 - [Week
-    3](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week 3/presentation.html)
+    3](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%203/presentation.html)
 - [Week
-    4](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week 4/presentation.html)
+    4](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%204/presentation.html)
 - [Week
-    5](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week 5/presentation.html)
+    5](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%205/presentation.html)
 
 How to submit
 -------------
