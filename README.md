@@ -97,6 +97,13 @@ Please find the slides below.
 - [Week
     5](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%205/presentation.html)
 
+Recorded Lectures
+-----------------
+
+1. [Week 1](https://drive.google.com/open?id=1eaWlJD7hCS7ECtSA18ErLaZIVygudji6)
+1. [Week 2](https://drive.google.com/open?id=1pLewvwRFihbKsAdhgj_A1dlB9YFW6fno)
+1. [Week 3](https://drive.google.com/open?id=1AKG8HC0TA0oSWA8ioGPEgTtFze0cWBHV)
+
 How to submit
 -------------
 
