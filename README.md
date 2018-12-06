@@ -59,11 +59,6 @@ Recorded Lectures
 1. [Week 2](https://drive.google.com/open?id=1pLewvwRFihbKsAdhgj_A1dlB9YFW6fno)
 1. [Week 3](https://drive.google.com/open?id=1AKG8HC0TA0oSWA8ioGPEgTtFze0cWBHV)
 
-Homepage
---------
-
-The course homepage can be found [here](https://hogeschool.github.io/Keuzevak-IADIP/).
-
 Course documentation
 --------------------
 
@@ -103,6 +98,11 @@ Week schedule
 \* Depending on the experience levels of the students, the final software may be
 improved to improve the grade. Depending on additional and optional criteria in
 the assignment description.
+
+Homepage
+--------
+
+The course homepage can be found [here](https://hogeschool.github.io/Keuzevak-IADIP/).
 
 How to submit
 -------------
