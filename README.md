@@ -25,6 +25,40 @@ the process of debugging software and the transformation of problem solutions to
 working code. The result of this will be a computer program, written by the
 student.
 
+Overview of assignments
+-----------------------
+
+Please find the weekly assignments below.
+
+1. [Week 1](assignments/week1.md)
+2. [Week 2](assignments/week2.md)
+3. [Week 3](assignments/week3.md)
+4. [Week 4](assignments/week4.md)
+5. [Week 5](assignments/week5.md)
+
+Slides
+------
+
+Please find the slides below.
+
+- [Week
+    1](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%201/presentation.html)
+- [Week
+    2](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%202/presentation.html)
+- [Week
+    3](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%203/presentation.html)
+- [Week
+    4](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%204/presentation.html)
+- [Week
+    5](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%205/presentation.html)
+
+Recorded Lectures
+-----------------
+
+1. [Week 1](https://drive.google.com/open?id=1eaWlJD7hCS7ECtSA18ErLaZIVygudji6)
+1. [Week 2](https://drive.google.com/open?id=1pLewvwRFihbKsAdhgj_A1dlB9YFW6fno)
+1. [Week 3](https://drive.google.com/open?id=1AKG8HC0TA0oSWA8ioGPEgTtFze0cWBHV)
+
 Homepage
 --------
 
@@ -69,40 +103,6 @@ Week schedule
 \* Depending on the experience levels of the students, the final software may be
 improved to improve the grade. Depending on additional and optional criteria in
 the assignment description.
-
-Overview of assignments
------------------------
-
-Please find the weekly assignments below.
-
-1. [Week 1](assignments/week1.md)
-2. [Week 2](assignments/week2.md)
-3. [Week 3](assignments/week3.md)
-4. [Week 4](assignments/week4.md)
-5. [Week 5](assignments/week5.md)
-
-Slides
-------
-
-Please find the slides below.
-
-- [Week
-    1](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%201/presentation.html)
-- [Week
-    2](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%202/presentation.html)
-- [Week
-    3](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%203/presentation.html)
-- [Week
-    4](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%204/presentation.html)
-- [Week
-    5](https://hogeschool.github.io/Keuzevak-IADIP/presentations/week%205/presentation.html)
-
-Recorded Lectures
------------------
-
-1. [Week 1](https://drive.google.com/open?id=1eaWlJD7hCS7ECtSA18ErLaZIVygudji6)
-1. [Week 2](https://drive.google.com/open?id=1pLewvwRFihbKsAdhgj_A1dlB9YFW6fno)
-1. [Week 3](https://drive.google.com/open?id=1AKG8HC0TA0oSWA8ioGPEgTtFze0cWBHV)
 
 How to submit
 -------------
