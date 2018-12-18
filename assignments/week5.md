@@ -38,7 +38,7 @@ point.
 Note: You can also choose to implement the power function as a recursive
 function.
 
-(1) Square root
+(2) Square root
 ---------------
 
 The square root function is our next target for implementation. This function is
