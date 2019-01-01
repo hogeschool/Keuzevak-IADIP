@@ -59,7 +59,7 @@ Recorded Lectures
 2. [Week 2](https://drive.google.com/open?id=1pLewvwRFihbKsAdhgj_A1dlB9YFW6fno)
 3. [Week 3](https://drive.google.com/open?id=1AKG8HC0TA0oSWA8ioGPEgTtFze0cWBHV)
 4. [Week 4](https://drive.google.com/open?id=1w4jgWp_mGPq6Tn1QKaf-F4XI2GvKgwMS)
-5. [Week 5]()
+5. [Week 5](https://drive.google.com/open?id=1RAp4WgKRKCD_VJswR6oRs9zyhb1Nzz7_)
 
 
 Course documentation
