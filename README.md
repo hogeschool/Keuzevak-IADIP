@@ -8,8 +8,8 @@ Introduction to Application Development in Python
 Teachers Period 1
 -----------------
 
-Marlon Etheredge (ethme at hr dot nl)
-Fatih Caglayan (caglf at hr dot nl)
+* Marlon Etheredge (ethme at hr dot nl)
+* Fatih Caglayan (caglf at hr dot nl)
 
 Description
 -----------
