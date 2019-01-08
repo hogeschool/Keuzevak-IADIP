@@ -5,6 +5,12 @@ Introduction to Application Development in Python
 
 ![Cover Image](docs/img/cover.jpg)
 
+Teachers Period 1
+-----------------
+
+Marlon Etheredge (ethme at hr dot nl)
+Fatih Caglayan (caglf at hr dot nl)
+
 Description
 -----------
 
