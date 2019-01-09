@@ -80,7 +80,7 @@ Final assignment criteria
 
 Please find the final assignment criteria below.
 
-[Final Assignment](docs/final-assignment)
+[Final Assignment](docs/final-assignment.md)
 
 Make sure to use the course description and final assignment criteria documents frequently, as these describe how you can pass this course!
 
