@@ -118,6 +118,8 @@ The final grade will be determined according to the following formula.
 
 `Grade = Progress * 0.3 + Final assignment * 0.7`
 
+__Assignments both weekly and final are individual work. In case of plagiarism student(s) will be reported to the exam committee.__
+
 ### Retake
 
 Should the grade of the final assessment be insufficient, there will be an
