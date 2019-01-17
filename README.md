@@ -9,7 +9,7 @@ Teachers Period 2
 -----------------
 
 * Marlon Etheredge (ethme at hr dot nl)
-* Fatih Caglayan (caglf at hr dot nl)
+* Fatih Caglayan (caghf at hr dot nl)
 
 Description
 -----------
