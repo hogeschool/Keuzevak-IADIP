@@ -118,15 +118,14 @@ criteria.
 The final grade will be determined according to the following formula.
 
 `Grade = Progress * 3 + Final assignment * 7`
+
 `Grade = numberOfWeeks/5 * 3 + numberOfRequirements/19 * 7`
 
 Example grade calculation:
 
 Student has implemented all mandatory requirements and has shown weekly progress each time. So he has 5 out of 5 weeks, and implemented the 13 mandatory requirements out of the total of 19 requirements:
 
-```
-(5/5)*3 + (13/19) * 7 = 7.8
-```
+`(5/5)*3 + (13/19) * 7 = 7.8`
 
 __Assignments both weekly and final are individual work. In case of plagiarism student(s) will be reported to the exam committee.__
 
