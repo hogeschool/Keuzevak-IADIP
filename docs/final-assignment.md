@@ -137,10 +137,10 @@ Implement processing of postfix expressions.
 
 `2 3 sum 1 multiply`
 
-Requirement A4): Prefix expressions (advanced)
+Requirement A4): Infix expressions (advanced)
 ----------------------------------------------
 
-Implement processing of prefix expressions.
+Implement processing of Infix expressions.
 
 `2 sum 3 multiply 1`
 
