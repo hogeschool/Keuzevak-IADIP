@@ -133,14 +133,14 @@ The simple expressions of the mandatory criteria should be extended such that th
 Requirement A3): Postfix expressions (advanced)
 -----------------------------------------------
 
-Implement processing of postfix expressions.
+Implement processing of postfix expressions. Implementation of requirement A2 prior to this is necessary.
 
 `2 3 sum 1 multiply`
 
 Requirement A4): Infix expressions (advanced)
 ----------------------------------------------
 
-Implement processing of Infix expressions.
+Implement processing of Infix expressions. Implementation of requirement A2 prior to this is necessary.
 
 `2 sum 3 multiply 1`
 
