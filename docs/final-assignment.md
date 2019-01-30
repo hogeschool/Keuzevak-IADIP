@@ -317,7 +317,8 @@ criteria.
 The final grade will be determined according to the following formula.
 
 `Grade = Progress * 3 + Final assignment * 7`
-      `= numberOfWeeks/5 * 3 + numberOfRequirements/19 * 7`
+
+`Grade = numberOfWeeks/5 * 3 + numberOfRequirements/19 * 7`
 
 Example grade calculation:
 
