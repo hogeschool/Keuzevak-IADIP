@@ -297,13 +297,41 @@ The binary to decimal operation should be implemented for binary strings. The na
     - In case operands of the wrong type are provided:
         - *output*: *invalid operand type*
 
-Grade build-up
---------------
+Grades and Assessment
+----------
 
-Each successfully implemented requirement accounts for 10/19 point. Example grade calculation:
+The final results of this course will be determined according to the following
+criteria.
 
-Weekly progression is 10, implemented all mandatory requirements.
+-   Weekly progress (0% - 100%): The programming tasks need to be evaluated by
+    the teacher on a weekly basis. The final assessment of this criterium is as
+    follows: `Progress = Number of approved weeks / 5`
 
-```
-(5 * (10 / 5)) * 0.3 + (13 * (10 / 19)) * 0.7 = 7.8
-```
+-   Final assignment (0% - 100%): The final assignment should be submitted through
+    AutoGradr. The assessment of the final assignment is automatic according to
+    the criteria of the assignment. The deadline for the final assignment will
+    be announced during the course. Each successfully implemented requirement
+    accounts for 1/19 point. Thus, The final assessment of this criterium is as
+    follows: `Final assignment = Number of implemented requirements / 19`
+
+The final grade will be determined according to the following formula.
+
+`Grade = Progress * 3 + Final assignment * 7`
+
+`Grade = numberOfWeeks/5 * 3 + numberOfRequirements/19 * 7`
+
+Example grade calculation:
+
+Student has implemented all mandatory requirements and has shown weekly progress each time. So he has 5 out of 5 weeks, and implemented the 13 mandatory requirements out of the total of 19 requirements:
+
+`(5/5)*3 + (13/19) * 7 = 7.8`
+
+__Assignments both weekly and final are individual work. In case of plagiarism student(s) will be reported to the exam committee.__
+
+### Retake
+
+Should the grade of the final assessment be insufficient, there will be an
+opportunity to retake. The deadline for this retake will be announced during the
+course.
+
+__The grade received for the weekly progression will be maintained for the retake.__
