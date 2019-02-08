@@ -99,24 +99,16 @@ Week schedule
 | 3   | Lists and String Operations | Processing command-line input (function syntax) | Week 4   |
 | 4   | Loops (For and While)       | Arithmetic operations on integers (+,-,/,\*)    | Week 5   |
 | 5   | Combination                 | Power, Square Root, GCD and LCM                 | Week 6   |
-| 6   | Refinement\*                | Software refinement                             |          |
-| 7   | Refinement\*                | Software refinement                             |          |
+| 6   | Refinement and Advanced     | Software refinement                             |          |
+| 7   | Refinement and Advanced     | Software refinement                             |          |
 
-**Final assignment deadline: Week 8**
+***Final assignment deadline: Week 8, Friday 23:59***
 
-\* Depending on the experience levels of the students, the final software may be
-improved to improve the grade. Depending on additional and optional criteria in
-the assignment description.
-
-Homepage
---------
-
-The course homepage can be found [here](https://hogeschool.github.io/Keuzevak-IADIP/).
 
 How to submit
 -------------
 
-Your code will be automatically verified according to the criteria found in the final assignment description. For the automatic verification, we make use of AutoGradr. Make sure to register an account at <http://AutoGradr.com>!
+Your code will be both automatically verified and personally checked according to the criteria found in the final assignment description. For the automatic verification, we make use of AutoGradr. Make sure to register an account at <http://AutoGradr.com>!
 
 The criteria in the final assignment document are implemented as rules in AutoGradr, therefore your application should strictly adhere to these criteria. Each week has a project in AutoGradr. You will need to submit the code that implements the functionality as written in the weekly assignments with these projects in AutoGradr.
 
@@ -137,4 +129,4 @@ When your solution passes, AutoGradr will tell you that every test case has pass
 When to submit
 --------------
 
-Refer to the schedule above. We will keep track of your weekly progress which is part of your grade. We therefore require you to have passed each weekly assignment _before_ the deadline.
+Refer to the schedule above. We will keep track of your weekly progress which is part of your grade. We therefore require you to have passed each weekly mandatory assignment _before_ the deadline.
