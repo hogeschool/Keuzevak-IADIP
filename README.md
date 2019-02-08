@@ -103,6 +103,7 @@ Week schedule
 | 7   | Refinement and Advanced     | Software refinement                             |          |
 
 ***Final assignment deadline: Week 8, Friday 23:59***
+***April 12, 2019 at 23:59***
 
 
 How to submit
