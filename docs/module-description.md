@@ -6,7 +6,7 @@ Module Description — Introduction to Application Development in Python
 ![Cover Image](https://github.com/hogeschool/Keuzevak-IADIP/raw/master/docs/img/cover.jpg)
 
 - **ECTS:** 2
-- **Course owner:** Marlon Etheredge
+- **Course owner:** Fatih Han Caglayan (f.h.caglayan at hr dot nl)
 
 Course overview
 ---------------
