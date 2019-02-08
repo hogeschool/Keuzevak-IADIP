@@ -8,7 +8,7 @@ Introduction to Application Development in Python
 Teachers
 -----------------
 
-* Fatih Caglayan, course coordinator (cagfh at hr dot nl)
+* Fatih Caglayan, course owner (cagfh at hr dot nl)
 * Babak Bashari Irad (bashb at hr dot nl)
 
 Description
