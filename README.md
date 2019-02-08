@@ -8,8 +8,8 @@ Introduction to Application Development in Python
 Teachers Period 2
 -----------------
 
-* Marlon Etheredge (ethme at hr dot nl)
 * Fatih Caglayan (cagfh at hr dot nl)
+* Babak Bashari Irad (bashb at hr dot nl)
 
 Description
 -----------
