@@ -5,10 +5,10 @@ Introduction to Application Development in Python
 
 ![Cover Image](docs/img/cover.jpg)
 
-Teachers Period 2
+Teachers
 -----------------
 
-* Fatih Caglayan (cagfh at hr dot nl)
+* Fatih Caglayan, course coordinator (cagfh at hr dot nl)
 * Babak Bashari Irad (bashb at hr dot nl)
 
 Description
