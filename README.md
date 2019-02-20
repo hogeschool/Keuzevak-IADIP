@@ -9,7 +9,7 @@ Teachers
 -----------------
 
 * Fatih Caglayan, course owner (cagfh at hr dot nl)
-* Babak Bashari Irad (bashb at hr dot nl)
+* Babak Bashari Rad (bashb at hr dot nl)
 
 Description
 -----------
