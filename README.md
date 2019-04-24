@@ -14,7 +14,7 @@ Teachers
 Description
 -----------
 
-The ability of software-engineers to analyze and solve problems and translate
+The ability of software engineers to analyze and solve problems and translate
 solutions into correct computer programs can be seen as important and
 fundamental skills. Throughout the study program as well as in a professional
 career, these skills will continuously be called upon.
