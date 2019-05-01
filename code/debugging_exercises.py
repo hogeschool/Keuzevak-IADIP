@@ -44,11 +44,10 @@ else:
     opinion = "No"
 
 for grade in grades:
-    print("Exam: %i" % grade)
+    print("Grade exam: %i" % grade)
 
-    print("Average: %b" % avg)
-
-    print("Grade: %s" % opinion)
+print("Average: %b" % avg)
+print("Opinion: %s" % opinion)
 
 if opinion in "no":
     print "Failed"
