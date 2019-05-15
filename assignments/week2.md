@@ -42,28 +42,28 @@ Please refer to the files in the [code/](https://github.com/hogeschool/Keuzevak-
 
 Refer to [code/main.py](https://github.com/hogeschool/Keuzevak-IADIP/blob/master/code/main.py) as a starting point for the entry point of the calculator which will feature the main loop.
 
-(3) The quit command
+(2) The quit command
 --------------------
 
 The first command that needs to be implemented is the *quit* command. Upon entering the string *'quit'* (without quotes) the calculator should stop. In other words, in case we find the input to the calculator to be the string *'quit'*, we need to exit the main loop.
 
 Implement the *quit* command.
 
-(4) The help command
+(3) The help command
 --------------------
 
 The *help* command will present our user with the available commands. You need to implement a *help* function that displays the available commands to the user. Please make use of the function *print_functions* available in [code/functions.py](https://github.com/hogeschool/Keuzevak-IADIP/blob/master/code/functions.py). In case we find the input to the calculator to be the string *'help'*, we need to call our implemented *help* function that displays the available commands to the user. After calling the *help* function, the calculator needs to continue.
 
 Implement the *help* command.
 
-(5) The version command
+(4) The version command
 -----------------------
 
 The *version* command will present our user with the version of our application. You will need to implement the *version* command, such that when the user enters the string *'version'* into the console, the application displays the current version of the application. The output should be exactly 'calculator version 0.1'.
 
 Implement the *version* command.
 
-(6) Advanced
+(5) Advanced
 ------------
 
 In addition to console input that will be the main interface for entering commands into our calculator, it might be useful to allow for commands to be entered into the program arguments. Instead of starting the application and entering our commands via the console, we can start our application with arguments provided to the application that are executed.
@@ -78,7 +78,7 @@ Or get the available commands by using our application as such:
 
 Another extra that can be added to the calulator is the command *ans* that will store the result of the last operation once we get to the implementation of the mathematical functions of week 4 and 5.
 
-(7) References
+(6) References
 --------------
 
 1. <https://docs.python.org/3.4/tutorial/inputoutput.html>
